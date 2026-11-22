@@ -1,0 +1,13 @@
+{
+  "name": "openfilm-jianying-layered-export",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "jianying-layered-export": "bin/export.mjs"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test test/*.test.mjs"
+  }
+}

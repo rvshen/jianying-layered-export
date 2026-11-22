@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      width: 1920px;
+      height: 1080px;
+      background: transparent;
+      overflow: hidden;
+      position: relative;
+      font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans SC", sans-serif;
+    }
+    #graphic-card {
+      position: absolute;
+      left: 140px;
+      top: 630px;
+      width: 820px;
+      height: 210px;
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      padding: 0 42px;
+      border-radius: 22px;
+      background: linear-gradient(135deg, #1b2838 0%, #243b55 100%);
+      border: 3px solid #f5c443;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+    }
+    .accent-bar {
+      width: 10px;
+      height: 112px;
+      border-radius: 6px;
+      background: #f5c443;
+      flex-shrink: 0;
+    }
+    .badge-icon {
+      width: 64px;
+      height: 64px;
+      flex-shrink: 0;
+    }
+    #headline-text {
+      font-size: 56px;
+      font-weight: 700;
+      line-height: 1.25;
+      color: #ffffff;
+      text-align: left;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+  <div id="graphic-card" data-layer="graphic">
+    <div class="accent-bar"></div>
+    <svg class="badge-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="4" y="4" width="56" height="56" rx="14" fill="#f5c443" fill-opacity="0.18" stroke="#f5c443" stroke-width="3"/>
+      <path d="M32 14L37.5 26.5L50 32L37.5 37.5L32 50L26.5 37.5L14 32L26.5 26.5L32 14Z" fill="#f5c443"/>
+    </svg>
+    <div id="headline-text" data-layer="text">OpenFilm 独立文字层</div>
+  </div>
+  <script>
+    window.film = {
+      duration: 5,
+      width: 1920,
+      height: 1080,
+      ready: document.fonts?.ready,
+      frame() {},
+    };
+  </script>
+</body>
+</html>

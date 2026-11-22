@@ -1,0 +1,17 @@
+{
+  "title": {
+    "en": "Jianying Layered Export",
+    "zh-CN": "剪映分层导出"
+  },
+  "summary": {
+    "en": "Export Jianying Pro drafts with independent graphic & editable text tracks (no burned-in text)",
+    "zh-CN": "基于 OpenFilm 0.4.0 原生剪映导出，把 HTML 页面拆为独立图形轨与可编辑文字轨，不再烧录进视频"
+  },
+  "about": "exporting Jianying Pro drafts with HTML page graphics and text split into independent editable tracks instead of burned-in video",
+  "category": "tool",
+  "cost": "free",
+  "icon": "layers",
+  "requires": [
+    "film"
+  ]
+}

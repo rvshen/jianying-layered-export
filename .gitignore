@@ -1,0 +1,24 @@
+# 依赖
+node_modules/
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# 构建产物 / 导出产物
+dist/
+build/
+out/
+*.log
+npm-debug.log*
+
+# 编辑器与系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 本地临时/测试产物
+.tmp/
+*.tmp
+coverage/
